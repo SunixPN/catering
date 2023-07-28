@@ -1,0 +1,157 @@
+.service {
+    margin: 140px 0 0 0;
+    background-image: url(../img/fone_2.png);
+    background-position: center;
+    background-size: cover;
+    height: 676px;
+    padding: 120px 0 0 0;
+}
+
+.service__about {
+    display: flex;
+    gap: 188px;
+    justify-content: center;
+}
+
+.service__min-title {
+    flex: 0 1 112px;
+}
+
+.min-title--white {
+    color: white;
+}
+
+.service__about-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    animation: fadeInRight 1s;
+}
+
+.service__titile {
+    max-width: 870px;
+}
+
+.title--white {
+    color: white;
+}
+
+.service__paragraf {
+    max-width: 880px;
+}
+
+.paragraf--white {
+    color: white;
+}
+
+//*********************************************************************************//
+
+
+.card {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -264px;
+    height: 496px;
+    animation: fadeInUp 1s;
+}
+
+.card__text {
+    display: flex;
+    flex-direction: column;
+    gap: 68px;
+    padding: 80px 68px 80px 68px;
+    background-color: white;
+    box-shadow: 28px 24px 60px $blue;
+}
+
+.card__price {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.card__title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 41.6px;
+}
+
+.card__price-text {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 20px;
+    opacity: 0.6;
+}
+
+.card__down-elem {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.card__paragraf {
+    max-width: 344px;
+}
+
+.card__image {
+    flex: 0 1 700px;
+    background-image: url(../img/card-image.png);
+    background-position: center;
+    background-size: cover;
+    height: 496px;
+    box-shadow: 28px 24px 60px $blue;
+}
+
+@media screen and (max-width:900px) {
+
+    .service {
+        padding: 48px 0 0 0;
+    }
+
+    .service__about {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .service__min-title {
+        flex: 0 1 auto;
+    }
+
+    .service__about-text {
+        gap: 40px;
+    }
+
+    .card {
+        flex-direction: column-reverse;
+    }
+
+    .card__text {
+        padding: 24px;
+    }
+
+    .card__image {
+        flex: 0 1 auto;
+    }
+
+    .card__text {
+        gap: 24px;
+        text-align: center;
+    }
+
+    .card__paragraf {
+        max-width: none;
+    }
+
+    .card__down-elem {
+        gap: 24px;
+    }
+    
+}
+
+@media screen and (max-width:560px) {
+    .card {
+        top: -180px;
+    }
+    
+}

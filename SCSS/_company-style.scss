@@ -1,0 +1,153 @@
+.company {
+    margin: 140px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    align-items: center;
+}
+
+.company__about {
+    display: flex;
+    gap: 264px;
+    align-items: flex-start;
+}
+
+.min-title {
+    font-weight: 400;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.company__text-about {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+.company__title {
+    max-width: 870px;
+    animation: fadeInUp 1s;
+}
+
+.title {
+    font-weight: 700;
+    @include adaptive-font(24, 40);
+    color: $blue;
+}
+
+.company__text-about-elem {
+    display: flex;
+    gap: 80px;
+}
+
+.company__text-about-paragraf {
+    max-width: 400px;
+    animation: fadeInRight 1s;
+}
+
+.paragraf {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 23.8px;
+
+}
+
+.button {
+    padding: 21px 41px 21px 41px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+    background-color: $blue;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+    animation: fadeInUp 1s;
+
+    &:hover {
+        background-color: $light-blue;
+        color: white;
+    }
+}
+
+.company__statistic {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 120px;
+}
+
+.company__statistic-elem {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 180px;
+    animation: fadeInRight 1s;
+}
+
+.company__statistic-elem-title {
+    font-weight: 500;
+    @include adaptive-font (40, 48);
+    color: $blue;
+
+    &::after {
+        content: "+";
+        margin-left: 16px;
+        font-size: 40px;
+        color: $light-blue;
+        line-height: 44px;
+        position: relative;
+        top: -5px;
+    }
+}
+
+.company__statistic-elem-text {
+    font-weight: 300;
+    @include adaptive-font (14, 16);
+}
+
+@media screen and (max-width: 1200px) {
+
+    .company {
+        align-items: center;
+    }
+
+    .company__about {
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .company__title {
+        max-width: none;
+    }
+
+    .company__text-about {
+        gap: 40px;
+    }
+
+    .company__text-about-paragraf {
+        max-width: none;
+    }
+
+    .company__text-about-elem {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .company__statistic {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    .company__button {
+        align-self: center;
+    }
+
+    .company__statistic-elem-title {
+        text-align: center;
+    }
+    
+}

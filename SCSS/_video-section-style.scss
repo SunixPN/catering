@@ -1,0 +1,21 @@
+.video-section {
+    width: 100%;
+    position: relative;
+    margin: 16px 0 0 0;
+}
+
+.video-section__video {
+    width: 100%;
+}
+
+.video-section__icon {
+    position: absolute;
+    left: calc(60 / 1440 * 100%);
+    top: calc(700 / 841.5 * 100%);
+    width: calc(100 / 1440 * 100%) ;
+    height: calc(100 / 810 * 100%);
+    background-image: url(../img/video-icon.png);
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}

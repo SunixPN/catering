@@ -1,0 +1,26 @@
+@import "fonts";
+@import "mixin";
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lab Grotesque", sans-serif;
+}
+
+@import "header-style";
+@import "company-style";
+@import "service-style";
+@import "quote-style";
+@import "video-section-style";
+@import "arguments-style";
+@import "client-style";
+@import "new-set-style";
+@import "form-style";
+@import "footer-style.scss"
+
+
